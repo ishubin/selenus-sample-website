@@ -1,0 +1,43 @@
+<a id="logo" href="@{Main.index}">SELENUS SAMPLE WEBSITE</a>
+<script>
+$(function (){
+	$("#login-popup .cancel").click(function (){
+		$("#login-popup").hide();
+	});
+	$("#loginLink").click(function (event){
+
+		$("#login-popup input[type=text]").val("");
+		$("#login-popup input[type=password]").val("");
+		var linkOffset = $(this).offset();
+		var linkWidth = $(this).outerWidth();
+		event.stopPropagation();
+
+		var width = $("#login-popup").outerWidth();
+		$("#login-popup").css({
+			top: linkOffset.top + 20,
+			left: linkOffset.left - width + linkWidth
+		});
+		$("#login-popup").toggle();
+		
+	});
+});
+</script>
+<div id="auth-menu">
+
+	<a id="loginLink" class="white popup-launcher" href="#">Login</a>
+
+	<div class="popup" id="login-popup" style="display:none;">
+		<form action="/login" method="POST">
+			<p id="login-popup-login">
+				<span>Login</span><br/>
+				<input type="text" name="login"/> 
+			</p>
+			<p id="login-popup-password">
+				<span>Password</span><br/>
+				<input type="password" name="password"/>
+			</p>
+			<input type="submit" name="Submit" value="Login"/>
+			<a href="#" class="cancel">Cancel</a>
+		</form>
+	</div>
+</div>

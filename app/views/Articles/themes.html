@@ -1,0 +1,12 @@
+#{extends 'main.html' /}
+#{set title:'Themes - Oculus Sample Website' /}
+
+<h1>Themes</h1>
+
+<ul>
+#{list items:themes, as:'theme'}
+	<li>
+		<a href="#">${theme}</a>
+	</li>
+#{/list}
+</ul>

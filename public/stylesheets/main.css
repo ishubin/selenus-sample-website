@@ -1,0 +1,166 @@
+body {
+	text-align:center;
+	padding:0px;
+	margin:0px;
+	background:#ddd;
+}
+body, td {
+	font-family: Arial, "MS Trebuchet", sans-serif;
+}
+
+a, a:active, a:visited{
+	color:blue;
+	font-weight:bold;
+	text-decoration:none;
+}
+a.white {
+	color:white;
+	text-shadow: 2px 2px 3px #333;
+}
+a.white:hover {
+	color:white;
+	text-shadow: 2px 2px 3px #333;
+}
+a:hover {
+	text-decoration:underline;
+}
+
+#container {
+	margin: 35px auto;
+	width: 900px;
+	background:#eee;
+	text-align: left;
+	padding:0px;
+	box-shadow: 2px 2px 10px #777;
+}
+
+#header {
+	width:auto;
+	background:#7BAFD4;
+	padding:10px;
+	height:70px;
+}
+#logo {
+	font-weight:bold;
+	float: left;
+	color: #548BB3;
+	font-size:40pt;
+	text-shadow: 1px 1px #9EC9E8, -1px -1px #196094;
+	margin:0px;
+}
+#logo:hover {
+	text-decoration:none;
+}
+
+
+#auth-menu {
+	text-align:right;
+	float:right;
+	height:70px;
+	vertical-align: middle;
+}
+
+#navigation {
+	margin:0px;
+	width:900px;
+	height:40px;
+	padding:0px;
+	background: #9EC9E8;
+	vertical-align: middle;
+}
+#navigation a {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top:10px;
+	top: 10px;
+	display:inline-block;
+}
+
+#content {
+	clear:both;
+	margin:0px;
+	width:600px;
+	padding:0px;
+	position:block;
+	min-height:300px;
+}
+
+#footer {
+	clear:both;
+	background:#7BAFD4;
+	text-align:right;
+	padding:20px;
+	height: 1%;
+}
+
+
+.popup {
+	position:absolute;
+	float:right;
+	display:block;
+	border:1px solid #999;
+	background:#f0f0f0;
+	padding:4px;
+	border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	box-shadow: 1px 1px 10px #444;
+}
+
+#login-popup {
+	width:200px;
+}
+#login-popup input[type=text], .popup input[type=password]{
+	margin:5px;
+	width:180px;
+	height:25px;
+	font-size:10pt;
+	border:1px solid #888;
+	border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+}
+
+.error {
+	color:red;
+}
+
+
+
+
+.short-article {
+	border: 1px solid #666;
+	width: 800px;
+	margin-left:40px;
+	margin-bottom:40px;
+	padding:0px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	box-shadow: 1px 1px 10px #444;
+}
+.short-article .article-title{
+	font-weight:bold;
+	width:550px;
+	padding:5px;
+	background: #ddf;
+	float:left;
+}
+.short-article .article-date {
+	background: #ddf;
+	padding:5px;
+	text-align:right;	
+}
+.short-article .article-text{
+	clear:both;
+	color:#888;
+	padding: 5px;
+}
+.short-article .article-footer {
+	
+	padding:5px;
+	text-align:right;
+}
+
+
+
+
+
+
+
