@@ -11,10 +11,22 @@ GET     /favicon.ico                            404
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public
 
-# Catch all
-*       /{controller}/{action}                  {controller}.{action}
-
 GET		/articles								Articles.newArticles
 GET		/themes									Articles.themes
+GET     /themes/{sectionId}                     Articles.articlesForTheme
 
 POST	/login									Login.login
+GET     /logout                                 Login.logout
+
+
+GET     /postArticle                            Articles.form
+
+POST    /postArticle                            Articles.postArticle
+
+
+
+
+
+
+# Catch all
+*       /{controller}/{action}                  {controller}.{action}

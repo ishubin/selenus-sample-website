@@ -4,9 +4,9 @@
 <h1>Themes</h1>
 
 <ul>
-#{list items:themes, as:'theme'}
+#{list items:sections, as:'section'}
 	<li>
-		<a href="#">${theme}</a>
+		<a href="/themes/${section.id}">${section.name}</a>
 	</li>
 #{/list}
 </ul>

@@ -15,11 +15,11 @@ a, a:active, a:visited{
 }
 a.white {
 	color:white;
-	text-shadow: 2px 2px 3px #333;
+	text-shadow: 1px 1px 0px #000;
 }
 a.white:hover {
 	color:white;
-	text-shadow: 2px 2px 3px #333;
+	text-shadow: 1px 1px 1px #000;
 }
 a:hover {
 	text-decoration:underline;
@@ -44,7 +44,7 @@ a:hover {
 	font-weight:bold;
 	float: left;
 	color: #548BB3;
-	font-size:40pt;
+	font-size:3em;
 	text-shadow: 1px 1px #9EC9E8, -1px -1px #196094;
 	margin:0px;
 }
@@ -55,9 +55,9 @@ a:hover {
 
 #auth-menu {
 	text-align:right;
+	width:100px;
 	float:right;
 	height:70px;
-	vertical-align: middle;
 }
 
 #navigation {
@@ -99,24 +99,14 @@ a:hover {
 	float:right;
 	display:block;
 	border:1px solid #999;
-	background:#f0f0f0;
-	padding:4px;
+	background:#93C7ED;
 	border-radius: 8px 8px 8px 8px;
 	-moz-border-radius: 8px 8px 8px 8px;
-	box-shadow: 1px 1px 10px #444;
+	box-shadow: 1px 1px 2px #444;
 }
 
 #login-popup {
 	width:200px;
-}
-#login-popup input[type=text], .popup input[type=password]{
-	margin:5px;
-	width:180px;
-	height:25px;
-	font-size:10pt;
-	border:1px solid #888;
-	border-radius: 4px 4px 4px 4px;
-	-moz-border-radius: 4px 4px 4px 4px;
 }
 
 .error {
@@ -159,7 +149,52 @@ a:hover {
 }
 
 
+form {
+	display:block;
+	margin:5px;
+	border:1px solid #3376A6;
+	border-radius:5px;
+	box-shadow:1px 1px 1px #ddd;
+	background:#D3E5F2;
+}
 
+form p span {
+	display:block;
+	font-weight:bold;
+}
+
+form p {
+	margin:10px;
+}
+form p input, form p textarea {
+	display:inline-block;
+	font-size:0.6em;
+	height:25px;
+    font-size:1em;
+    border:1px solid #888;
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+}
+form p input[type=text] {
+    width:100%;
+}
+form p input[type=submit] {
+	color: white;
+    background:#7BAFD4;
+    cursor:hand;
+    cursor:pointer;
+}
+form p input[type=text], form p textarea {
+	box-shadow:1px 1px 3px #aaa inset;
+}
+form p textarea {
+	width:100%;
+	height:70px;
+}
+
+form p textarea.large-text {
+	height:300px;
+} 
 
 
 

@@ -1,0 +1,39 @@
+#{extends 'main.html' /}
+#{set title:'Post Article - Oculus Sample Website' /}
+
+<h1>Post article</h1>
+
+
+
+<form  method="post">
+    <p>
+        <span>Theme</span>
+        <select name="sectionId">
+            #{list items:sections, as:'section'}
+            <option value="${section.id}">${section.name}</option>
+            #{/list}
+        </select>
+    </p>
+	<p>
+	   <span>Title</span>
+	   <input type="text" name="article.title" value="${article.title}"/>
+	</p>    
+    <p>
+        <span>Text</span>
+        <textarea name="article.text" class="large-text">${article.text}</textarea>
+    </p>
+    
+    <p>
+        <input type="submit" name="Post" value="Post"/>
+    </p>
+    
+    #{ifErrors}
+	    <div class="error">
+	       <ul>
+	       #{errors}
+	           <li> ${error} </li>
+	       #{/errors}
+	       </ul>
+	    </div>
+    #{/ifErrors}
+</form>
