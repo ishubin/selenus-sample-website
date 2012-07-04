@@ -7,7 +7,7 @@
 #{list items:articles, as:'article'}
 <div class="short-article">
 	<div class="article-title">
-		<a href="/themes/${article.section.id}">${article.section.name}</a> - ${article.title}
+		<a class="theme-link" href="/themes/${article.section.id}">${article.section.name}</a> - <span class="title">${article.title}</span>
 	</div>
 	<div class="article-date">
 		${article.date}

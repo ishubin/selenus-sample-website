@@ -7,3 +7,26 @@ Section(java):
     
 Section(php):
     name: PHP        
+    
+    
+    
+Article(art1):
+    title: Title 1
+    text:  Some sample text
+    section: cpp
+    date: 2012-01-01 00:00:00
+    author: Jeremy
+    
+Article(art2):
+    title: Title 2
+    text:  Some sample text
+    section: java
+    date: 2012-01-01 00:00:00
+    author: Jeremy
+    
+Article(art3):
+    title: Title 3
+    text:  Some sample text
+    section: cpp
+    date: 2012-01-01 00:00:00
+    author: Jeremy
