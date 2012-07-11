@@ -27,7 +27,7 @@ $(function (){
     #{if request.cookies.get("userName") == null }
         <a id="loginLink" class="white popup-launcher" href="#">Login</a>
 	    <div class="popup" id="login-popup" style="display:none;">
-	        <form action="/login" method="POST">
+	        <form class="nice" action="/login" method="POST">
 	            <p id="login-popup-login">
 	                <span>Login</span>
 	                <input type="text" name="login"/> 
