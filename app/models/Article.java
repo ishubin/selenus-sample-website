@@ -4,6 +4,7 @@ import play.data.validation.Required;
 import play.db.jpa.*;
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
@@ -32,9 +33,9 @@ public class Article extends Model {
 		this.section = section;
 	}
 	
-	
 	public static List<Article> newArticles() {
 	    return Article.find("order by date desc").fetch();
 	}
+
 	
 }

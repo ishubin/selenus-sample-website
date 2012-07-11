@@ -12,6 +12,11 @@ GET     /favicon.ico                            404
 GET     /public/                                staticDir:public
 
 GET		/articles								Articles.newArticles
+GET     /article/{articleId}                    Articles.article
+GET     /postArticle                            Articles.form
+POST    /postArticle                            Articles.postArticle
+POST    /article/{articleId}/comment            Articles.postComment
+
 GET		/themes									Articles.themes
 GET     /themes/{sectionId}                     Articles.articlesForTheme
 
@@ -19,9 +24,6 @@ POST	/login									Login.login
 GET     /logout                                 Login.logout
 
 
-GET     /postArticle                            Articles.form
-
-POST    /postArticle                            Articles.postArticle
 
 
 

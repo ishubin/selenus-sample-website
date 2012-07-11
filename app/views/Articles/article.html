@@ -1,0 +1,31 @@
+#{extends 'main.html' /}
+#{set title:'Post Article - Oculus Sample Website' /}
+
+<h1>${article.title}</h1>
+
+${article.text}
+
+
+#{if request.cookies.get("userName") != null }
+    <form action="/article/${article.id}/comment" method="POST">
+	    <div class="post-comment-container">
+	        <div class="post-comment">
+		        <textarea name="text"></textarea>
+		        <input type="submit" name="post" value="Post comment"/>
+		    </div>
+	    </div>
+    </form>
+#{/if}
+
+
+#{list items:comments, as:'comment'}
+<div class="comment-container">
+    <div class="comment">
+        <div class="comment-user">${comment.name}</div>
+        <div class="comment-message">
+            ${comment.message.escape().nl2br()}
+        </div>
+    </div>
+</div>
+#{/list}
+
